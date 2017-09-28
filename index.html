@@ -358,15 +358,42 @@
             <p>###I suffered a lot</p>
 <h2 id="I-really-suffered-a-lot"><a href="#I-really-suffered-a-lot" class="headerlink" title="I really suffered a lot"></a>I really suffered a lot</h2><h1 id="I-really-really-suffered-a-lot"><a href="#I-really-really-suffered-a-lot" class="headerlink" title="I really  really suffered a lot"></a>I really  really suffered a lot</h1><p>写上面的三行只是为了熟练一下Markdown的语法…..</p>
 <p>不过为了搭这个博客小白的我真的废了一番功夫，下面回忆整理一下我遇到的困难并给出解决方案，希望其他小白看到后能不像我一样花那么多时间。</p>
-<p>#精简版本<br>1.使用稳定的网络，不要轻易使用镜像源，会给后期操作带来一定的不便。</p>
-<p>2.hexo配置时不要忘记冒号后的空格。</p>
-<p>3.某些教程已经比较落后，在Hexo3.0及以上版本中仓库地址不能使用http而必须用git@github.com:</p>
-<p>4.github建仓库时必须与用户名相同，否则无法关联到该网站。</p>
-<p>5.使用主题时尽量下载成熟版本的主题.</p>
-<p>1.最大也是最先遇到的困难是还没有带自己的电脑，于是饱受网吧及机房机器和网络的困扰。在第一天我在网吧尝试安装hexo时，可能是因为网络的原因，hexo竟然安装不下来，卡死在第一次换行后。在这种情况下我使用了在网上找到的淘宝镜像源安装hexo，然而下来的东西却是残次品，配置完成后竟然找不到config文件，浪费了一下午的时间。</p>
-<p>2.今天下午总算在机房安装了配套环境，开始搭建。然后就是hexo d出现错误，看了半天发现是config文件冒号后忽略了空格。</p>
-<p>3.但是hexo g和d之后我的github网站竟然点不开了，看了半天原来是仓库名和用户名没有匹配，修改之后成功打开了远程网站。</p>
-<p>4.在hexo官网上挑选了主题，可能是因为主题没有开发成熟的原因导致部署失败，网页出现乱码，幸好提前保存了副本，恢复原件后选用了比较成熟的NEXT作为主题并小小的做了个性化配置，效果还算不错。</p>
+<p>#精简版本</p>
+<ol>
+<li><p>使用稳定的网络，不要轻易使用<strong>镜像源</strong>，会给后期操作带来一定的不便。</p>
+</li>
+<li><p>hexo配置时不要忘记<strong>冒号后的空格。</strong></p>
+<p> 举个我的_config.yml的例子：</p>
+<pre><code>deploy: 
+
+   type: git
+
+   repository: git@github.com:YAOYI626/YAOYI626.github.io.git
+
+   branch: master
+</code></pre></li>
+</ol>
+<ol>
+<li><p>某些教程已经比较落后，在Hexo3.0及以上版本中仓库地址<strong>不能使用http而必须用git@github.com</strong>:</p>
+</li>
+<li><p>github建仓库时必须与<strong>用户名相同</strong>，否则无法关联到该网站。</p>
+</li>
+<li><p>使用主题时尽量下载<strong>成熟版本</strong>的主题。否则可能会因为主题的不完善导致网页乱码。</p>
+</li>
+</ol>
+<hr>
+<p>####下面是啰嗦篇</p>
+<ol>
+<li><p>最大也是最先遇到的困难是还没有带自己的电脑，于是饱受网吧及机房机器和网络的困扰。在第一天我在网吧尝试安装hexo时，可能是因为网络的原因，hexo竟然安装不下来，卡死在第一次换行后。在这种情况下我使用了在网上找到的淘宝镜像源安装hexo，然而下来的东西却是残次品，配置完成后竟然找不到config文件，浪费了一下午的时间。</p>
+</li>
+<li><p>今天下午总算在机房安装了配套环境，开始搭建。然后就是hexo d出现错误，看了半天发现是config文件冒号后忽略了空格。</p>
+</li>
+<li><p>但是hexo g和d之后我的github网站竟然点不开了，看了半天原来是仓库名和用户名没有匹配，修改之后成功打开了远程网站。</p>
+</li>
+<li><p>在hexo官网上挑选了主题，可能是因为主题没有开发成熟的原因导致部署失败，网页出现乱码，幸好提前保存了副本，恢复原件后选用了比较成熟的NEXT作为主题并小小的做了个性化配置，效果还算不错。</p>
+</li>
+<li>搞完了这些以后我还是很有成就感的（大佬们不要吐槽了…）。</li>
+</ol>
 
           
         
